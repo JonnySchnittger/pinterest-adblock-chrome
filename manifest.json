@@ -1,0 +1,22 @@
+{
+    "name": "Pinterest AdBlock",
+    "manifest_version": 2,
+    "version": "1.0",
+    "author": "Me",
+
+    "icons": {
+        "20": "icon_20.png"
+    },
+
+    "browser_action": {
+        "default_icon": {
+            "20": "icon_20.png",
+            "40": "icon_40.png"
+        }
+    },
+
+    "content_scripts": [{
+        "matches": ["*://www.pinterest.ie/*", "*://pinterest.ie/*", "*://www.pinterest.com/*", "*://pinterest.com/*"],
+        "js": ["content.js"]
+    }]
+}
